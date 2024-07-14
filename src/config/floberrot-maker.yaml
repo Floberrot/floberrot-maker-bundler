@@ -1,0 +1,4 @@
+floberrot-maker:
+    dto_path: '%kernel.project_dir%/src/DTO'
+    entity_path: '%kernel.project_dir%/src/Entity'
+    model_path: '%kernel.project_dir%/src/Model'

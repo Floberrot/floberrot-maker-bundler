@@ -1,5 +1,16 @@
 {
-    "type": "project",
+    "name": "floberrot/maker-bundle",
+    "type": "maker",
+    "description": "Maker of model/dto with entities",
+    "keywords": ["maker","maker-bundle","symfony", "symfony-bundle", "onion"],
+    "homepage": "https://github.com/Floberrot",
+    "authors": [
+        {
+            "name": "Florian Berrot",
+            "email": "florian.b@decq.com",
+            "role": "Developer"
+        }
+    ],
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
@@ -15,6 +26,7 @@
         "symfony/yaml": "7.1.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.60"
     },
     "config": {
         "allow-plugins": {
@@ -31,7 +43,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "App\\Script\\": "src/Script/"
         }
     },
     "replace": {
@@ -62,7 +75,8 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.1.*"
+            "require": "7.1.*",
+            "config-dir": "config/packages"
         }
     }
 }
